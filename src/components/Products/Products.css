@@ -1,0 +1,63 @@
+.products__section {
+  padding-bottom: 120px;
+}
+.products__title h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000000 !important;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+.card {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  border: 1px solid #5aa6ec;
+}
+.card-body .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.card-body h4 {
+  transition: all 0.3s ease-in-out;
+  color: #1a1919;
+}
+.card:hover h4 {
+  color: #5aa6ec;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.card-img,
+.card-img-bottom,
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+.btn-dark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.btn {
+  padding: 6px 20px !important;
+  margin-top: 10px;
+  border-radius: 25px !important;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-dark:hover {
+  background-color: #5aa6ec !important;
+  border-color: #5aa6ec !important;
+}

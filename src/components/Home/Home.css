@@ -1,0 +1,169 @@
+/*--------------------- 
+Banner Section Styele
+--------------------- */
+.banner__section {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../../images/banner/banner-bg.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.banner__info {
+  padding-top: calc(100vh / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.banner__info h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.banner__info h4 {
+  font-size: 1.85rem;
+  line-height: 2.5rem;
+  padding: 15px 0;
+}
+
+/* -------------------
+Home About Section Style
+---------------------*/
+.about__img img {
+  width: 90%;
+  height: 100%;
+}
+.about__info h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #57a8f3;
+  text-transform: capitalize;
+}
+.about__info h4 {
+  padding: 12px 0;
+  font-size: 1.85rem;
+  color: gray;
+}
+.about__info p {
+  line-height: 1.85rem;
+  font-size: 1.225rem;
+  padding-bottom: 20px;
+}
+
+/* -----------------
+Category Section Style
+--------------------*/
+
+.category__section,
+.about__section {
+  padding: 100px 0;
+}
+.category__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.category__info a {
+  text-decoration: none;
+  color: white;
+}
+.category__info a:hover {
+  color: white;
+}
+.category__info p {
+  font-size: 14px;
+}
+.category__overlay {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+}
+.category__info:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0) scale(1);
+  transition: all 450ms ease-out 0s;
+}
+.category__info:hover .overlay {
+  transform: scale(1);
+}
+.link-icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* -------------------
+Mobile Responsive
+----------------------*/
+@media only screen and (max-width: 860px) {
+  /* Home Banner Section */
+  .banner__section {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 50px 0;
+  }
+  .banner__info {
+    padding-top: calc(50vh / 8);
+  }
+  .banner__info h4 {
+    font-size: 1.25rem;
+  }
+
+  /* Home About Section */
+  .about__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about__info h2 {
+    font-size: 2rem;
+    margin-top: 70px;
+  }
+  .about__info h4 {
+    font-size: 1.4rem;
+    padding: 10px 0;
+  }
+  .about__info p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  /* Home Category Section */
+  .category__section {
+    padding: 0px 0;
+  }
+  .category__title {
+    font-size: 1.5rem;
+  }
+  .image,
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
