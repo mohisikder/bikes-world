@@ -6,7 +6,7 @@ import { AboutImg } from "../../constant";
 const About = () => {
   return (
     <>
-      <div className="about__section">
+      <div className="about__section__about">
         <Container>
           <Row>
             <Col xs={12} md={6}>
