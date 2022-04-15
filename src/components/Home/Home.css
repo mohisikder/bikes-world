@@ -11,7 +11,7 @@ Banner Section Styele
   height: 100vh;
 }
 .banner__info {
-  padding-top: calc(100vh / 3);
+  padding-top: calc(80vh / 50);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,0 +1,16 @@
+.footer__section {
+  padding: 60px 0;
+  background-color: #d3d2d2;
+}
+.footer__section h6 {
+  margin-left: 15px;
+  padding-bottom: 10px;
+}
+.footer__section .nav-link {
+  transition: all 0.3s ease-in-out;
+  font-size: 0.85rem;
+}
+.footer__section .nav-link:hover {
+  transform: translateX(8px);
+  color: cornflowerblue !important;
+}
